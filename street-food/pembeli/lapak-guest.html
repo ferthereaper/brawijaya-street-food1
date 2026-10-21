@@ -1,23 +1,190 @@
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Daftar Lapak – Brawijaya Street Food</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/css/style.css"></head><body>
-<header class="top"><h1 class="brand">Brawijaya<br>Street Food</h1><div class="sess"><span>Guest</span><a class="pill" href="../auth/login.html">Login</a></div></header>
-<main><h2 class="ttl">List Lapak</h2>
-<div class="box"><input type="checkbox" id="more" class="more" aria-label="Tampilkan semua"><div class="grid3">
-<a class="lapak" href="menu-guest.html"><i></i><span>Lapak 1</span></a>
-<a class="lapak" href="menu-guest.html"><i></i><span>Lapak 2</span></a>
-<a class="lapak" href="menu-guest.html"><i></i><span>Lapak 3</span></a>
-<a class="lapak" href="menu-guest.html"><i></i><span>Lapak 4</span></a>
-<a class="lapak" href="menu-guest.html"><i></i><span>Lapak 5</span></a>
-<a class="lapak" href="menu-guest.html"><i></i><span>Lapak 6</span></a>
-<a class="lapak" href="menu-guest.html"><i></i><span>Lapak 7</span></a>
-<a class="lapak" href="menu-guest.html"><i></i><span>Lapak 8</span></a>
-<a class="lapak" href="menu-guest.html"><i></i><span>Lapak 9</span></a>
-<a class="lapak extra" href="menu-guest.html"><i></i><span>Lapak 10</span></a>
-<a class="lapak extra" href="menu-guest.html"><i></i><span>Lapak 11</span></a>
-<a class="lapak extra" href="menu-guest.html"><i></i><span>Lapak 12</span></a>
-<a class="lapak extra" href="menu-guest.html"><i></i><span>Lapak 13</span></a>
-<a class="lapak extra" href="menu-guest.html"><i></i><span>Lapak 14</span></a>
-<a class="lapak extra" href="menu-guest.html"><i></i><span>Lapak 15</span></a>
-</div><label for="more" class="bar l-more">Selengkapnya...</label><label for="more" class="bar l-tutup">Tutup</label></div>
-</main>
-<footer><div class="cols"><div><b>Alamat</b>Jl. Besar Ijen No.25A, Klojen, Kota Malang</div><div><b>Jam Operasional</b>Buka setiap hari • 10.00 – 22.00 WIB</div><div><b>Hubungi Kami</b>💬 08xx-xxxx-xxxx<br>📞 08xx-xxxx-xxxx<br>✉ halo@brawijayastreetfood.id</div></div><p class="copy">© 2026 Brawijaya Street Food. All rights reserved.</p></footer></body></html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17130f">
+    <title>Daftar Lapak - Brawijaya Street Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="bn">
+        <a href="lapak-guest.html" class="bn-brand"><span class="ic" aria-hidden="true">🍽️</span> Brawijaya Street Food</a>
+        <div class="bn-actions">
+            <span class="user-chip"><span class="ic" aria-hidden="true">👤</span>Tamu</span>
+            <a href="../auth/login.html" class="btn-secondary">Masuk</a>
+        </div>
+    </header>
+
+    <nav class="dashboard-nav">
+        <a href="lapak-guest.html" class="active"><span class="ic" aria-hidden="true">🏪</span> Daftar Lapak</a>
+        <a href="menu-guest.html"><span class="ic" aria-hidden="true">🍜</span> Menu</a>
+        <a href="checkout-guest.html"><span class="ic" aria-hidden="true">🛒</span> Keranjang <span class="count" data-cart-count="cart">0</span></a>
+    </nav>
+
+    <main class="page-container">
+        <section class="page-heading">
+            <div>
+                <h1>Daftar Lapak</h1>
+                <p>Pilih lapak favoritmu untuk melihat menu dan memesan.</p>
+            </div>
+        </section>
+
+        <div class="toolbar">
+            <div class="search-box">
+                <span class="ic" aria-hidden="true">🔍</span>
+                <input type="search" placeholder="Cari nama atau kategori lapak..." data-filter-input aria-label="Cari lapak">
+            </div>
+        </div>
+
+        <section class="stall-grid">
+        <article class="stall-card" data-filter-item>
+            <div class="stall-avatar" aria-hidden="true">🍢</div>
+            <div class="stall-info">
+                <h3>Sate Pak Dhe</h3>
+                <p>Makanan</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item>
+            <div class="stall-avatar" aria-hidden="true">🥣</div>
+            <div class="stall-info">
+                <h3>Bakso Cak Gito</h3>
+                <p>Makanan</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item>
+            <div class="stall-avatar" aria-hidden="true">🥤</div>
+            <div class="stall-info">
+                <h3>Es Dawet Bu Tini</h3>
+                <p>Minuman</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item>
+            <div class="stall-avatar" aria-hidden="true">🍛</div>
+            <div class="stall-info">
+                <h3>Nasi Goreng Mas Joko</h3>
+                <p>Makanan</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item>
+            <div class="stall-avatar" aria-hidden="true">🍜</div>
+            <div class="stall-info">
+                <h3>Mie Ayam Pak Slamet</h3>
+                <p>Makanan</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item>
+            <div class="stall-avatar" aria-hidden="true">🍲</div>
+            <div class="stall-info">
+                <h3>Soto Lamongan</h3>
+                <p>Makanan</p>
+                <span class="badge badge-danger">Tutup</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item>
+            <div class="stall-avatar" aria-hidden="true">☕</div>
+            <div class="stall-info">
+                <h3>Kopi Klotok</h3>
+                <p>Minuman</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item>
+            <div class="stall-avatar" aria-hidden="true">🥗</div>
+            <div class="stall-info">
+                <h3>Pecel Bu Yati</h3>
+                <p>Makanan</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item>
+            <div class="stall-avatar" aria-hidden="true">🥟</div>
+            <div class="stall-info">
+                <h3>Siomay Bandung</h3>
+                <p>Camilan</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item data-extra hidden>
+            <div class="stall-avatar" aria-hidden="true">🍲</div>
+            <div class="stall-info">
+                <h3>Tahu Campur Pak Man</h3>
+                <p>Makanan</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item data-extra hidden>
+            <div class="stall-avatar" aria-hidden="true">🥭</div>
+            <div class="stall-info">
+                <h3>Rujak Cingur</h3>
+                <p>Camilan</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item data-extra hidden>
+            <div class="stall-avatar" aria-hidden="true">🍵</div>
+            <div class="stall-info">
+                <h3>Wedang Jahe Mbah Min</h3>
+                <p>Minuman</p>
+                <span class="badge badge-danger">Tutup</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item data-extra hidden>
+            <div class="stall-avatar" aria-hidden="true">🍤</div>
+            <div class="stall-info">
+                <h3>Gorengan Bu Tutik</h3>
+                <p>Camilan</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item data-extra hidden>
+            <div class="stall-avatar" aria-hidden="true">🥞</div>
+            <div class="stall-info">
+                <h3>Martabak Mini</h3>
+                <p>Camilan</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        <article class="stall-card" data-filter-item data-extra hidden>
+            <div class="stall-avatar" aria-hidden="true">🥥</div>
+            <div class="stall-info">
+                <h3>Es Kelapa Muda</h3>
+                <p>Minuman</p>
+                <span class="badge badge-success">Buka</span>
+            </div>
+            <a href="menu-guest.html" class="btn-primary">Lihat Menu</a>
+        </article>
+        </section>
+
+        <div class="more-row">
+            <button type="button" class="btn-secondary" data-more data-state="closed">Tampilkan Lebih Banyak</button>
+        </div>
+    </main>
+
+    <footer class="copy">&copy; 2026 Brawijaya Street Food. Jl. Besar Ijen No.25A, Klojen, Kota Malang.</footer>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,4 +1,202 @@
+
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login – Brawijaya Street Food</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/css/style.css"></head><body>
-<h1 class="bn">Selamat Datang</h1><main><h2 class="ttl-b">Brawijaya Street Food</h2><p class="addr">Jl. Besar Ijen No.25A, Gading Kasri, Kec. Klojen, Kota Malang, Jawa Timur 65115</p><form class="fcard" action="../pembeli/lapak.html"><h2>LOGIN</h2><div class="fin"><label for="u">Username</label><input id="u" name="u" required autocomplete="username"><label for="p">Password</label><input id="p" name="p" type="password" required autocomplete="current-password"><button class="pb" name="role" value="user" style="margin-top:28px">Login Pengguna</button><button class="pb" name="role" value="seller" formaction="../penjual/stok.html">Login Penjual</button><button class="pb" name="role" value="admin" formaction="../admin/index.html">Login Admin</button><p class="sw">Belum Punya Akun? <a href="register.html">Buat Akun</a></p></div></form></main>
-<footer><div class="cols"><div><b>Alamat</b>Jl. Besar Ijen No.25A, Klojen, Kota Malang</div><div><b>Jam Operasional</b>Buka setiap hari • 10.00 – 22.00 WIB</div><div><b>Hubungi Kami</b>💬 08xx-xxxx-xxxx<br>📞 08xx-xxxx-xxxx<br>✉ halo@brawijayastreetfood.id</div></div><p class="copy">© 2026 Brawijaya Street Food. All rights reserved.</p></footer></body></html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Brawijaya Street Food</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="auth-body">
+
+    <header class="bn auth-header">
+        <a href="../index.html" class="bn-brand">
+            <span class="ic" aria-hidden="true">🍽️</span>
+            <span>Brawijaya Street Food</span>
+        </a>
+
+        <a href="../index.html" class="bn-back">
+            <span class="ic" aria-hidden="true">←</span>
+            Kembali
+        </a>
+    </header>
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <div class="auth-icon">
+                <span class="ic" aria-hidden="true">🔐</span>
+            </div>
+
+            <h1>Selamat Datang!</h1>
+
+            <p class="auth-description">
+                Masuk ke akunmu untuk mengakses layanan
+                Brawijaya Street Food.
+            </p>
+
+            <form action="#" method="post" id="loginForm">
+
+                <div class="form-group">
+                    <label for="username">
+                        <span class="ic" aria-hidden="true">👤</span>
+                        Username atau Email
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Masukkan username atau email"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <span class="ic" aria-hidden="true">🔒</span>
+                        Password
+                    </label>
+
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Masukkan password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="togglePassword"
+                            aria-label="Tampilkan password"
+                        >
+                            <span class="ic" aria-hidden="true">👁️</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="role"><span class="ic" aria-hidden="true">🪪</span> Masuk sebagai</label>
+                    <select id="role" name="role">
+                        <option value="pembeli">Pembeli</option>
+                        <option value="penjual">Penjual / Kasir</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+
+                <div class="auth-options">
+                    <label class="remember-label">
+                        <input type="checkbox" name="remember">
+                        <span>Ingat saya</span>
+                    </label>
+
+                    <a href="#" class="auth-link"
+                       onclick="alert('Silakan hubungi administrator untuk bantuan pemulihan akun.'); return false;">
+                        Lupa password?
+                    </a>
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    <span class="ic" aria-hidden="true">🔑</span>
+                    Masuk
+                </button>
+
+                <p id="loginMessage" class="auth-message"
+                   role="status"></p>
+
+            </form>
+
+            <div class="auth-divider">
+                <span>atau</span>
+            </div>
+
+            <a href="../pembeli/lapak-guest.html"
+               class="auth-guest">
+                <span class="ic" aria-hidden="true">🏪</span>
+                Jelajahi Menu sebagai Tamu
+            </a>
+
+            <p class="auth-register">
+                Belum memiliki akun?
+                <a href="register.html">Daftar sekarang</a>
+            </p>
+
+        </section>
+
+        <div class="auth-information">
+            <div>
+                <span class="ic" aria-hidden="true">📱</span>
+                <span>Pesan praktis melalui QR Code</span>
+            </div>
+
+            <div>
+                <span class="ic" aria-hidden="true">🍜</span>
+                <span>Beragam menu dalam satu tempat</span>
+            </div>
+
+            <div>
+                <span class="ic" aria-hidden="true">💳</span>
+                <span>Pembayaran QRIS untuk pesanan web</span>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="auth-footer">
+        <p>
+            &copy; 2026 Brawijaya Street Food.
+            Semua hak dilindungi.
+        </p>
+
+        <p>
+            <span class="ic" aria-hidden="true">📍</span>
+            Jl. Besar Ijen, Klojen, Kota Malang
+        </p>
+    </footer>
+
+    <script>
+        const passwordInput = document.getElementById("password");
+        const togglePassword = document.getElementById("togglePassword");
+        const loginForm = document.getElementById("loginForm");
+        const loginMessage = document.getElementById("loginMessage");
+
+        togglePassword.addEventListener("click", function () {
+            const isPassword = passwordInput.type === "password";
+
+            passwordInput.type = isPassword ? "text" : "password";
+
+            this.innerHTML = isPassword
+                ? '<span class="ic" aria-hidden="true">🙈</span>'
+                : '<span class="ic" aria-hidden="true">👁️</span>';
+
+            this.setAttribute(
+                "aria-label",
+                isPassword ? "Sembunyikan password" : "Tampilkan password"
+            );
+        });
+
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var tujuan = {
+        pembeli: "../pembeli/lapak.html",
+        penjual: "../penjual/stok.html",
+        admin: "../admin/index.html"
+    }[document.getElementById("role").value];
+
+    loginMessage.textContent = "Mode demo: autentikasi belum terhubung ke server. Mengalihkan...";
+    loginMessage.className = "auth-message success";
+    setTimeout(function () { window.location.href = tujuan; }, 700);
+        });
+    </script>
+
+</body>
+</html>

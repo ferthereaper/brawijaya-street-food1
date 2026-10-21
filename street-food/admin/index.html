@@ -1,8 +1,137 @@
+
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin – Brawijaya Street Food</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/css/style.css"></head><body>
-<header class="top"><h1 class="brand">Brawijaya<br>Street Food</h1><div class="sess"><span>Admin</span><a class="pill" href="../auth/login.html">Logout</a></div></header>
-<div class="tabs cz"><a class="on" href="index.html">Beranda</a><a href="lapak.html">List Lapak</a><a href="tambah.html">Tambah Lapak</a><a href="sewa.html">Status Sewa</a></div>
-<main>
-<h2 class="ttl free">MENU</h2><div class="menu"><a href="lapak.html">LIST LAPAK</a><a href="tambah.html">TAMBAH LAPAK</a><a href="sewa.html">STATUS SEWA</a></div>
-</main>
-<footer><div class="cols"><div><b>Alamat</b>Jl. Besar Ijen No.25A, Klojen, Kota Malang</div><div><b>Jam Operasional</b>Buka setiap hari • 10.00 – 22.00 WIB</div><div><b>Hubungi Kami</b>💬 08xx-xxxx-xxxx<br>📞 08xx-xxxx-xxxx<br>✉ halo@brawijayastreetfood.id</div></div><p class="copy">© 2026 Brawijaya Street Food. All rights reserved.</p></footer></body></html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin | Brawijaya Street Food</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="bn">
+        <a href="index.html" class="bn-brand">
+            <span class="ic" aria-hidden="true">🍽️</span> Brawijaya Street Food
+        </a>
+        <a href="../index.html" class="btn-secondary">
+            <span class="ic" aria-hidden="true">🚪</span> Keluar
+        </a>
+    </header>
+
+    <nav class="dashboard-nav">
+        <a href="index.html" class="active"><span class="ic" aria-hidden="true">🏠</span> Beranda</a>
+        <a href="lapak.html"><span class="ic" aria-hidden="true">🏪</span> List Lapak</a>
+        <a href="tambah.html"><span class="ic" aria-hidden="true">➕</span> Tambah Lapak</a>
+        <a href="sewa.html"><span class="ic" aria-hidden="true">📄</span> Status Sewa</a>
+    </nav>
+
+    <main class="page-container">
+        <section class="page-heading">
+            <div>
+                <h1>Dashboard Admin</h1>
+                <p>Kelola operasional kawasan Brawijaya Street Food.</p>
+            </div>
+            <span class="badge badge-success"><span class="ic" aria-hidden="true">●</span> Sistem Demo</span>
+        </section>
+
+        <section class="dashboard-grid">
+            <article class="stat-card">
+                <div class="stat-icon"><span class="ic" aria-hidden="true">🏪</span></div>
+                <div><p>Total Lapak</p><h3>12</h3></div>
+            </article>
+            <article class="stat-card">
+                <div class="stat-icon"><span class="ic" aria-hidden="true">🏬</span></div>
+                <div><p>Lapak Aktif</p><h3>10</h3></div>
+            </article>
+            <article class="stat-card">
+                <div class="stat-icon"><span class="ic" aria-hidden="true">🪑</span></div>
+                <div><p>Meja Terdaftar</p><h3>20</h3></div>
+            </article>
+            <article class="stat-card">
+                <div class="stat-icon"><span class="ic" aria-hidden="true">📋</span></div>
+                <div><p>Pesanan Hari Ini</p><h3>38</h3></div>
+            </article>
+        </section>
+
+        <section class="panel">
+            <div class="page-heading">
+                <div>
+                    <h2>Lapak Terbaru</h2>
+                    <p>Ringkasan mitra yang terdaftar di kawasan.</p>
+                </div>
+                <a href="tambah.html" class="btn-primary">
+                    <span class="ic" aria-hidden="true">＋</span> Tambah Lapak
+                </a>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nama Lapak</th>
+                            <th>Pemilik</th>
+                            <th>Kategori</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Warung Nasi Bu Sari</td>
+                            <td>Bu Sari</td>
+                            <td>Makanan</td>
+                            <td><span class="badge badge-success">Aktif</span></td>
+                            <td><a href="lapak.html" class="auth-link">Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Es Teh Nusantara</td>
+                            <td>Pak Andi</td>
+                            <td>Minuman</td>
+                            <td><span class="badge badge-success">Aktif</span></td>
+                            <td><a href="lapak.html" class="auth-link">Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Bakso Malang</td>
+                            <td>Pak Budi</td>
+                            <td>Makanan</td>
+                            <td><span class="badge badge-warning">Nonaktif</span></td>
+                            <td><a href="lapak.html" class="auth-link">Detail</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="menu-grid">
+            <a href="lapak.html" class="menu-card">
+                <div class="menu-image"><span class="ic" aria-hidden="true">🏪</span></div>
+                <div class="menu-content">
+                    <h3>Kelola Lapak</h3>
+                    <p>Lihat dan kelola daftar pedagang mitra.</p>
+                </div>
+            </a>
+            <a href="tambah.html" class="menu-card">
+                <div class="menu-image"><span class="ic" aria-hidden="true">👤</span></div>
+                <div class="menu-content">
+                    <h3>Tambah Mitra</h3>
+                    <p>Siapkan pendaftaran lapak baru.</p>
+                </div>
+            </a>
+            <a href="sewa.html" class="menu-card">
+                <div class="menu-image"><span class="ic" aria-hidden="true">🧾</span></div>
+                <div class="menu-content">
+                    <h3>Status Sewa</h3>
+                    <p>Lihat contoh informasi status sewa lapak.</p>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <footer class="copy">
+        &copy; 2026 Brawijaya Street Food — Panel Administrator
+    </footer>
+</body>
+</html>
