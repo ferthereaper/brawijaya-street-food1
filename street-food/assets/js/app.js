@@ -134,6 +134,8 @@
                 if (q === "") { item.hidden = item.hasAttribute("data-extra") && !expanded; }
                 else { item.hidden = item.textContent.toLowerCase().indexOf(q) === -1; }
             });
+            var none = document.querySelector("[data-filter-empty]");
+            if (none) { none.hidden = document.querySelectorAll("[data-filter-item]:not([hidden])").length > 0; }
         });
     });
 
