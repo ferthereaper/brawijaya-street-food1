@@ -1,0 +1,10 @@
+<?php
+// Salin menjadi includes/config.local.php lalu isi (file itu sudah ada di .gitignore).
+return [
+    'DB_HOST'    => 'aws-0-ap-southeast-1.pooler.supabase.com',
+    'DB_PORT'    => '6543',
+    'DB_NAME'    => 'postgres',
+    'DB_USER'    => 'postgres.xxxxxxxxxxxx',
+    'DB_PASS'    => 'ISI_PASSWORD_BARU_DI_SINI',
+    'DB_SSLMODE' => 'require',
+];
